@@ -4,12 +4,17 @@ body{
     font-family: "Montserrat", "Avenir";
 }
 
-img{
+.sample{
     display: inline-block;
-    height: 20px;
-    position: relative;
-    top: 5px;
+    font-size: 20px;
+}
 
+#player-one i{
+    color: #4074db;
+}
+
+#player-two i{
+    color: #db4040;
 }
 
 .gap{
@@ -17,7 +22,8 @@ img{
 }
 
 .blue-border{
-    height: 100%;
+    display: inline-block;
+    height: 30px;
     padding: 5px;
 }
 

@@ -6,14 +6,20 @@ var gameStatus = -1;
 var character;
 var validity;
 
-var cw = $('.square').width();
+var dw = $('.square').width();
 $('.square').css({
-    'height': cw + 'px'
+    'height': dw + 'px'
 });
 
 var iw = $('.square').width();
+iw = iw - 30;
 $('.square').css({
     'font-size': iw + 'px'
+});
+
+var pad = dw-iw;
+$(".square i").css({
+    'padding': pad + 'px'
 });
 
 var squares = $(".square");
@@ -102,11 +108,9 @@ for(let i = 0;i<squares.length;i++)
 }
 
 function changePlayer(){
-    console.log(player);
     player = (player % 2) ? 2 : 1;
     $("#player-one").toggleClass("selected");
     $("#player-two").toggleClass("selected");
-    console.log(square);
 }
 
 function removeIcons()

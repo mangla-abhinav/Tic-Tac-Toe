@@ -6,6 +6,10 @@ var gameStatus = -1;
 var character;
 var validity;
 
+var cw = $('.square').width();
+$('.square').css({
+    'height': cw + 'px'
+});
 
 var squares = $(".square");
 

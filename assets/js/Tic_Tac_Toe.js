@@ -11,6 +11,11 @@ $('.square').css({
     'height': cw + 'px'
 });
 
+var iw = $('.square').width();
+$('.square i').css({
+    'font-size': iw + 'px'
+});
+
 var squares = $(".square");
 
 $("#developer").on("click", function () {

@@ -34,7 +34,7 @@ body{
 .square{
     width: 25%;
     margin: 4.16%;
-    height: 150px;
+    /* height: 150px; */
     float: left;
     border-radius: 15%;
     transition: background 0.6s;

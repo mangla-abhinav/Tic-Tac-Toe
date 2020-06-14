@@ -33,7 +33,7 @@ $("#developer").on("click", function () {
     $("#normal").removeClass("selected");
     $(".blue-border i").remove();
     $("#player-one").append("<i class='fab fa-github sample black'></i>");
-    $("#player-two").append("<i class='fab fa-stack-overflow sample blue'></i>");
+    $("#player-two").append("<i class='fas fa-bug sample blue'></i>");
     removeIcons();
     $("#player-one").addClass("selected");
     $("#player-two").removeClass("selected");
@@ -57,7 +57,7 @@ function reset(){
     $("#developer").removeClass("selected");
     $(".blue-border i").remove();
     $("#player-one").append("<i class='far fa-circle sample black'></i>");
-    $("#player-two").append("<i class='fas fa-times sample blue'></i>");
+    $("#player-two").append("<i class='fas fa-times-circle sample blue'></i>");
     $("#player-one").addClass("selected");
     $("#player-two").removeClass("selected");
     removeIcons();
@@ -81,25 +81,25 @@ for(let i = 0;i<squares.length;i++)
                 if(player == 1)
             $(this).append("<i class='fab fa-github black'></i>");
             else if(player == 2)
-            $(this).append("<i class='fab fa-stack-overflow blue'></i>");
+            $(this).append("<i class='fas fa-bug blue'></i>");
             }
     
             else if(mode === "normal"){
                 if(player == 1)
             $(this).append("<i class='far fa-circle black'></i>");
             else if(player == 2)
-            $(this).append("<i class='fas fa-times blue'></i>");
+            $(this).append("<i class='fas fa-times-circle blue'></i>");
             }
     
             gameStatus = checkForWin();
     
             if(gameStatus === 0)
             {
-                document.querySelector("#answer").textContent = "GAME DRAW!!!";
+                document.querySelector("#answer").textContent = "GAME DRAW";
             }
             else if(gameStatus === 1)
             {
-                document.querySelector("#answer").textContent = "Player " + player + " Wins!!!" ;
+                document.querySelector("#answer").textContent = "Player " + player + " Wins" ;
             }
             changePlayer();
         }
@@ -174,11 +174,11 @@ function markBoard(mark)
 
     else if(gameStatus === 0)
     {
-        document.querySelector("#answer").textContent = "GAME DRAW!!!";
+        document.querySelector("#answer").textContent = "GAME DRAW";
     }
     else
     {
-        document.querySelector("#answer").textContent = "INVALID MOVE!!!";
+        document.querySelector("#answer").textContent = "INVALID MOVE";
         return 0;
     }
 }

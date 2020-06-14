@@ -93,11 +93,9 @@ for(let i = 0;i<squares.length;i++)
 }
 
 function changePlayer(){
-    console.log(player);
     player = (player % 2) ? 2 : 1;
     $("#player-one").toggleClass("selected");
     $("#player-two").toggleClass("selected");
-    console.log(square);
 }
 
 function removeIcons()

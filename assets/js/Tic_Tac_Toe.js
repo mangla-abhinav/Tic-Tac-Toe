@@ -12,7 +12,7 @@ $('.square').css({
 });
 
 var iw = $('.square').width();
-$('.square i').css({
+$('.square').css({
     'font-size': iw + 'px'
 });
 

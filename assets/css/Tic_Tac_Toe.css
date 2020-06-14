@@ -21,6 +21,10 @@ body{
     margin: 0 10%;
 }
 
+.square i{
+    padding: 15px;
+}
+
 .blue-border{
     display: inline-block;
     height: 20px;
@@ -47,7 +51,7 @@ body{
 
 #answer{
     display: inline-block;
-    width: 40%;
+    width: 25%;
 }
 
 h1{

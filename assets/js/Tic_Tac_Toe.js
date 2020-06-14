@@ -6,14 +6,20 @@ var gameStatus = -1;
 var character;
 var validity;
 
-var cw = $('.square').width();
+var dw = $('.square').width();
 $('.square').css({
-    'height': cw + 'px'
+    'height': dw + 'px'
 });
 
 var iw = $('.square').width();
+iw = iw - 30;
 $('.square').css({
     'font-size': iw + 'px'
+});
+
+var pad = dw-iw;
+$(".square i").css({
+    'padding': pad + 'px'
 });
 
 var squares = $(".square");
